@@ -1,0 +1,44 @@
+@import url("./prefix.css");
+@import url("./variables.css");
+
+#app {
+  min-height: 100vh;
+  background-color: gray;
+  display: grid;
+  place-items: center;
+}
+
+.phone {
+  overflow: hidden;
+  width: 100%;
+  max-width: 380px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: var(--phone-corner);
+  padding: 1rem;
+}
+
+.phone__header {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  border-top-left-radius: calc(var(--phone-corner) - 0.8rem);
+  border-top-right-radius: calc(var(--phone-corner) - 0.8rem);
+  background: var(--light-violet);
+  background: linear-gradient(
+    90deg,
+    var(--light-violet) 0%,
+    var(--light-magenta) 100%
+  );
+}
+
+.phone__header::before {
+  content: "";
+  position: absolute;
+  height: 3.5rem;
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1.5rem;
+  background-color: white;
+}
