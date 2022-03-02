@@ -136,4 +136,31 @@
   background-color: var(--chat-left-bg);
   border-bottom-left-radius: 0.2em;
   color: var(--chat-left);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.chat-box-right {
+  background-color: #fff;
+  color: var(--chat-right);
+  align-self: flex-end;
+  border-bottom-right-radius: 0.2em;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+}
+
+.chat-box-img {
+  max-width: 220px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  padding: 0;
+  margin-top: 0.8rem;
+}
+
+.chat-box-img img {
+  width: 100%;
+  border-radius: 0.8em;
+}
+
+.chat-box-img.chat-box-img-right {
+  align-self: flex-end;
 }
