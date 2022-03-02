@@ -14,7 +14,9 @@
   place-items: center;
 }
 
+/* PHONE */
 .phone {
+  position: relative;
   overflow: hidden;
   width: 100%;
   max-width: 380px;
@@ -24,14 +26,16 @@
   padding: 1rem;
 }
 
+/* PHONE HEADER */
 .phone__header {
   --px: 1rem;
+  position: absolute;
+  inset: 0.8rem;
+  z-index: 10;
   padding-top: calc(var(--notch-height) - 1.8rem);
   padding-left: var(--px);
   padding-right: var(--px);
-  position: relative;
-  height: 100px;
-  width: 100%;
+  height: var(--phone-header-height);
   border-top-left-radius: calc(var(--phone-corner) - 0.8rem);
   border-top-right-radius: calc(var(--phone-corner) - 0.8rem);
   border-bottom-right-radius: 0.5rem;
@@ -98,4 +102,13 @@
 .phone__header__menu {
   align-self: center;
   height: var(--header-ico-height);
+}
+
+/* PHONE SCREEN */
+
+.phone__screen {
+  background-color: gray;
+  position: absolute;
+  inset: 0.8rem;
+  border-radius: calc(var(--phone-corner) - 0.8rem);
 }
