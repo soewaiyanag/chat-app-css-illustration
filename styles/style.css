@@ -19,7 +19,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 380px;
+  max-width: 360px;
   height: 600px;
   background-color: #fff;
   border-radius: var(--phone-corner);
@@ -126,8 +126,8 @@
 .chat-box {
   display: block;
   font-size: 0.85rem;
-  max-width: 24ch;
-  border-radius: 1em;
+  max-width: 26ch;
+  border-radius: 1.2em;
   padding: 0.8em;
   font-weight: 400;
 }
@@ -159,6 +159,15 @@
 .chat-box-img img {
   width: 100%;
   border-radius: 0.8em;
+  cursor: pointer;
+  outline-style: solid;
+  outline-color: var(--light-magenta);
+  outline-width: 0;
+  transition: outline 200ms;
+}
+
+.chat-box-img img:hover {
+  outline-width: 2px;
 }
 
 .chat-box-img.chat-box-img-right {
