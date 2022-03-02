@@ -9,7 +9,7 @@
 
 #app {
   min-height: 100vh;
-  background-color: gray;
+  background-color: var(--app-bg);
   display: grid;
   place-items: center;
 }
@@ -24,6 +24,7 @@
   background-color: #fff;
   border-radius: var(--phone-corner);
   padding: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* PHONE HEADER */
@@ -108,7 +109,7 @@
 /* PHONE SCREEN */
 
 .phone__screen {
-  background-color: gray;
+  background-color: var(--app-bg);
   position: absolute;
   inset: 0.8rem;
   border-radius: calc(var(--phone-corner) - 0.8rem);
