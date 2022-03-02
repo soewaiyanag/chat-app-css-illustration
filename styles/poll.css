@@ -1,0 +1,32 @@
+.chat-box.chat-box-poll {
+  max-width: 220px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  column-gap: 1rem;
+  background: linear-gradient(
+    90deg,
+    var(--light-magenta) 0%,
+    var(--light-violet) 100%
+  );
+  color: #fff;
+  padding: 0.8rem;
+}
+
+.chat-box-poll--checkbox {
+  border-radius: 50%;
+  appearance: none;
+  width: 16px;
+  aspect-ratio: 1/1;
+  outline: 1px solid white;
+}
+
+.chat-box-poll__about {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.chat-box-poll__fee {
+  font-size: 1rem;
+  font-weight: 600;
+}

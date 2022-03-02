@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 @import url("./prefix.css");
 @import url("./variables.css");
+@import url("./poll.css");
 
 .icon {
   cursor: pointer;
@@ -19,8 +20,8 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 300px;
-  height: 600px;
+  max-width: 340px;
+  height: 700px;
   background-color: #fff;
   border-radius: var(--phone-corner);
   padding: 1rem;
