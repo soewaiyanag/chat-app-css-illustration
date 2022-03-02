@@ -34,6 +34,8 @@
   width: 100%;
   border-top-left-radius: calc(var(--phone-corner) - 0.8rem);
   border-top-right-radius: calc(var(--phone-corner) - 0.8rem);
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
   background: var(--light-violet);
   background: linear-gradient(
     90deg,
