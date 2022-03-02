@@ -1,5 +1,7 @@
 :root {
   --phone-corner: 2.6rem;
+  --notch-height: 3.5rem;
+  --header-ico-height: 1.2rem;
   --light-violet: #8838ff;
   --light-magenta: #e942ff;
 }
