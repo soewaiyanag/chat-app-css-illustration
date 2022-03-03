@@ -3,6 +3,7 @@
 @import url("./variables.css");
 @import url("./poll.css");
 @import url("./text_input.css");
+@import url("./chat_box.css");
 
 .icon {
   cursor: pointer;
@@ -12,8 +13,32 @@
 #app {
   min-height: 100vh;
   background-color: var(--app-bg);
+}
+
+/* PHONE CONTAINER */
+
+.phone-container {
+  width: 100%;
   display: grid;
   place-items: center;
+  padding: 5rem;
+}
+
+.phone-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  max-height: 860px;
+  width: 50%;
+  background: linear-gradient(
+    180deg,
+    var(--light-magenta) 0%,
+    var(--light-violet) 50%,
+    var(--light-violet) 100%
+  );
+  border-bottom-right-radius: 20rem;
 }
 
 /* PHONE */
@@ -120,57 +145,4 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
-/* CHAT BOX */
-
-.chat-box {
-  display: block;
-  font-size: 0.65rem;
-  font-weight: 500;
-  max-width: 25ch;
-  border-radius: 1.2em;
-  padding: 0.8em;
-}
-
-.chat-box-left {
-  background-color: var(--chat-left-bg);
-  border-bottom-left-radius: 0.2em;
-  color: var(--chat-left);
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-}
-
-.chat-box-right {
-  background-color: #fff;
-  color: var(--chat-right);
-  align-self: flex-end;
-  border-bottom-right-radius: 0.2em;
-  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
-}
-
-.chat-box-img {
-  max-width: 170px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.6rem;
-  padding: 0;
-  margin-top: 0.5rem;
-}
-
-.chat-box-img img {
-  width: 100%;
-  border-radius: 0.8em;
-  cursor: pointer;
-  outline-style: solid;
-  outline-color: var(--light-magenta);
-  outline-width: 0;
-  transition: outline 200ms;
-}
-
-.chat-box-img img:hover {
-  outline-width: 2px;
-}
-
-.chat-box-img.chat-box-img-right {
-  align-self: flex-end;
 }
