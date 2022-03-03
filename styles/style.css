@@ -4,6 +4,7 @@
 @import url("./poll.css");
 @import url("./text_input.css");
 @import url("./chat_box.css");
+@import url("./text__section.css");
 
 .icon {
   cursor: pointer;
@@ -13,6 +14,7 @@
 #app {
   min-height: 100vh;
   background-color: var(--app-bg);
+  padding: 5rem 0;
 }
 
 /* PHONE CONTAINER */
@@ -21,7 +23,7 @@
   width: 100%;
   display: grid;
   place-items: center;
-  padding: 5rem;
+  padding-bottom: 4rem;
 }
 
 .phone-container::before {
@@ -46,6 +48,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+  min-width: 300px;
   max-width: 340px;
   min-height: 680px;
   background-color: #fff;
