@@ -5,6 +5,14 @@
   margin-right: var(--x);
   display: grid;
   gap: 1.4rem;
+  place-content: center;
+}
+
+@media screen and (min-width: 790px) {
+  .text--section {
+    text-align: left;
+    transform: translateY(-10%);
+  }
 }
 
 .text--section__header {
