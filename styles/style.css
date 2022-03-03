@@ -22,7 +22,7 @@
   overflow: hidden;
   width: 100%;
   max-width: 340px;
-  height: 700px;
+  min-height: 680px;
   background-color: #fff;
   border-radius: var(--phone-corner);
   padding: 1rem;
