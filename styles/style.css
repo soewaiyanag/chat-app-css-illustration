@@ -2,6 +2,7 @@
 @import url("./prefix.css");
 @import url("./variables.css");
 @import url("./poll.css");
+@import url("./text_input.css");
 
 .icon {
   cursor: pointer;

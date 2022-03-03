@@ -9,4 +9,5 @@
   --chat-left: hsl(276, 55%, 52%);
   --chat-left-bg: hsla(276, 55%, 52%, 0.1);
   --chat-right: hsl(271, 15%, 43%);
+  --placeholder-color: hsl(206, 6%, 79%);
 }
